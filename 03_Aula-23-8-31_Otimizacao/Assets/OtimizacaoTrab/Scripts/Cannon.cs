@@ -19,11 +19,11 @@ public class Cannon : MonoBehaviour
 
 
     #region Metodos Privados
-    private void Movement() //Metodo utilizado para movimentar o carrinho do canhão no eixo X.
+    private void Movement() //Metodo utilizado para movimentar o carrinho do canhï¿½o no eixo X.
     {
         float x = Input.GetAxis("Horizontal"); //Recebe o Input.
 
-        if (transform.position.x < -maxDistance) //Valida o limite de posição do player.
+        if (transform.position.x < -maxDistance) //Valida o limite de posiï¿½ï¿½o do player.
         {
             transform.position = new Vector3(maxDistance,transform.position.y, transform.position.z);
         }
@@ -49,7 +49,7 @@ public class Cannon : MonoBehaviour
 
     private void SwapMaterial(GameObject refGameObject) //Metodo para mudar as cores dos projeteis.
     {
-        Material material = new Material(Shader.Find("Universal Render Pipeline/Lit"));
+        Material material = new Material(Shader.Find("Standard"));
         int color = Random.Range(0, 5);
 
         switch(color){
